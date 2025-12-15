@@ -1,0 +1,54 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+#design {
+  background-color: #758466;
+}
+
+.faq details {
+  background-color: #faf8f5;
+  padding: 12px 14px;
+  margin: 10px;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq details[open] {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.faq p {
+  margin: 10px 0 0;
+  line-height: 1.5;
+}
+
+.pil {
+  text-align: right;
+}
+
+.faq_color {
+  text-align: center;
+  color: #faf8f5;
+}
+
+@media screen and (min-width: 1300px) {
+  main {
+    margin: 150px;
+  }
+}
