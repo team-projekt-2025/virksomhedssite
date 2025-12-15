@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>Bambussengetøj</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="layout.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,5 +12,48 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/login.css" />
   </head>
+  <body>
+    <section class="logo_grid_1-1">
+      <a href="index.html"
+        ><img class="logo" src="img.isa/logo.webp" alt="Wonder living logo" />
+      </a>
+    </section>
+    <section class="grid_3-1">
+      <div class="tilbage">
+        <a href="javascript:history.back()" class="back-btn">Tilbage</a>
+      </div>
+
+      <h3>Log ind</h3>
+      <p>Vælg hvordan du vil logge ind</p>
+      <div class="login_form_grid_4-1">
+        <form>
+          <div class="form-group">
+            <button type="button" class="shop">Log ind med shop</button>
+          </div>
+          <p>eller</p>
+          <div class="email_label">
+            <label for="email" class="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              aria-describedby="email-error"
+              required
+            />
+            <p class="error-message" id="email-error">Please enter a value</p>
+          </div>
+
+          <button type="button" class="login">Log ind</button>
+        </form>
+      </div>
+
+      <div class="ikke_medlem">
+        <b>Ikke medlem?</b>
+        <a href="">Bliv medlem</a>
+      </div>
+    </section>
+  </body>
+  <footer></footer>
 </html>

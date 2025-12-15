@@ -1,0 +1,139 @@
+.grid_2-1,
+.top_grid_1-2,
+.bund_grid_3-2 {
+  display: grid;
+  max-width: 100vw;
+}
+/* Mobile version start */
+
+.grid_2-1 {
+  grid-template-columns: 1fr;
+}
+
+.top_grid_1-2 {
+  grid-template-columns: 1fr;
+}
+
+.bund_grid_3-2 {
+  grid-template-columns: 1fr;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.shop_videre {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  text-decoration: none; /* Fjerner link stregen */
+
+  /* selve bottum */
+  background: #dcdbcf;
+  color: #1d1c1a;
+  padding: 10px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  margin: 2px;
+  border-radius: 0.3rem;
+}
+
+.kurv {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.kurv-card {
+  background: #f7f4ee; /* lys boks */
+  margin: 0 auto; /* placerer den i center */
+  gap: 50px;
+
+  background: light-dark(#faf8f5, #faf8f5); /* grå baggrund */
+  max-width: 300px; /* bredde på boksen */
+  min-height: 50rem; /* Ændrer højden af den hvide boks */
+  /* størrelse */
+  width: calc(100% - 32px);
+  max-width: 420px;
+  min-height: calc(100vh - 32px);
+
+  /* placering */
+  margin: 16px auto;
+  display: flex; /* placerer den oppe*/
+  flex-direction: column; /* placerer den oppe*/
+  /* luft */
+  padding: 24px;
+
+  /* layout */
+  position: relative;
+}
+
+.icon {
+  width: 15%;
+  display: block;
+  margin-top: 20%;
+}
+
+.tom {
+  display: block;
+}
+
+p {
+  display: block;
+}
+
+/* start - Sat ind for at lave popup*/
+.desktop-only {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  /* slut - Sat ind for at lave popup*/
+}
+
+body {
+  background-color: #dcdbcf;
+}
+/* Mobile version slut */
+
+/* Desktop version start */
+
+@media screen and (min-width: 1300px) {
+  :root {
+    --gap: 24px;
+    --pad: 32px;
+  }
+
+  /* start - Sat ind for at lave popup*/
+  .desktop-only {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+  /* slut - Sat ind for at lave popup*/
+  .grid_2-1 {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .bund_grid_3-2 {
+    grid-template-columns: 3fr 1fr;
+  }
+  .desktop-only {
+    display: inline-block;
+  }
+  #popup {
+    background-color: #dcdbcf;
+  }
+  #popup:popover-open {
+    inset: auto 16px auto auto; /* Sørger for at popupen er i højre side */
+    margin: 0; /* Sørger for at popupen er i højre side */
+  }
+}
+
+/* Desktop version slut */
