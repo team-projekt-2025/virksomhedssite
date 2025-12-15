@@ -1,0 +1,108 @@
+header {
+  position: sticky;
+  top: 0;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 250px;
+  height: 50px;
+  display: block;
+}
+
+nav {
+  display: block;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: flex;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: left;
+}
+
+.menu a:hover {
+  color: #649eca;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: block;
+}
+
+.menu {
+  display: none; /* Skjult som standard */
+}
+
+.burger {
+  display: block; /* Vis burger menu */
+  background-color: transparent;
+  border: 0;
+}
+
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+nav.active .menu {
+  display: block; /* Vis menuen, når nav er aktiv */
+  background-color: #ffffff;
+  position: absolute;
+  top: 94px; /* Justér efter din header højde */
+  left: 0;
+  width: 100%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+nav.active .menu li {
+  margin: 10px 20px; /* Mellemrum mellem listeelementer */
+}
+
+nav.active .menu a {
+  font-size: 24px; /* Størrelse på links i mobile visning */
+}
