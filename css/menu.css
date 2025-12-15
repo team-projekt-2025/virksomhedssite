@@ -1,3 +1,10 @@
+header > div {
+  display: flex;
+  align-items: center; /* alt på samme lodrette linje */
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -6,13 +13,28 @@ header {
   align-items: center;
   padding: 20px;
   background-color: #ffffff;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  justify-content: center; /* centrer vandret */
+  align-items: center;
 }
 
 .logo img {
   width: 250px;
   height: 50px;
   display: block;
+}
+
+.logo_1 {
+  display: flex;
+  justify-content: right;
+  align-items: normal;
+}
+
+.logo_1 img {
+  width: 40px;
 }
 
 nav {
