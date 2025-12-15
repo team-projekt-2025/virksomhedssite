@@ -71,6 +71,86 @@ button {
   font-size: 18px;
 }
 
+.footer {
+  background-color: #c7c0b0;
+  padding: 20px;
+  font-family: "Mona Sans", sans-serif;
+}
+
+/*Skaber linjerne som deler det op, så der er mere overskugeligt at kigge på*/
+.footer-section {
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+}
+
+/* knappen med titel + pil */
+.footer-toggle {
+  width: 100%;
+  border: none;
+  background: none; /*Skal være none ellers er der hvid baggrund*/
+  padding: 4px;
+  display: flex; /*Gør så det kan ligge i grid*/
+  justify-content: space-between; /*Gør så pilene ligger i højre side af skærmen*/
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* lille pil */
+.footer-toggle .chevron {
+  font-size: 18px;
+}
+
+/* indhold (drop-down) – skjult som udgangspunkt */
+.footer-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-right: 10px;
+}
+
+/* når sektionen er åben */
+.footer-section.open .footer-content {
+  max-height: 400px;
+}
+
+/* links i footer */
+.footer-content a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  text-align: left;
+}
+
+/* nyhedsbrev-felt */
+.newsletter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #000;
+  padding: 6px 0;
+}
+
+.newsletter input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+  font-size: 18px;
+}
+
+.mail-icon {
+  font-size: 18px;
+}
+
+span {
+  font-size: 20px;
+  color: #49433c;
+}
+
 @media screen and (min-width: 1300px) {
   h1 {
     font-size: 50px;
@@ -91,5 +171,38 @@ button {
 
   button {
     font-size: 20px;
+  }
+
+  /*Design til footer*/
+  .footer {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr 1.2fr 1.4fr;
+    gap: 60px;
+    padding: 40px 80px;
+  }
+
+  .footer-section {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  /* titlerne skal ligne H2 i desktop */
+  .footer-toggle {
+    padding: 0 0 10px;
+    cursor: default; /* ingen "klik"-fornemmelse */
+  }
+
+  .footer-toggle .chevron {
+    display: none; /* pil væk på desktop */
+  }
+
+  /* altid åbent på desktop */
+  .footer-content {
+    max-height: none !important;
+    overflow: visible;
+  }
+
+  span {
+    font-size: 25px;
   }
 }
