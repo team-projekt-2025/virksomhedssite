@@ -8,7 +8,38 @@
 .bambus1 {
   text-align: center;
   padding: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
+
+.bambus2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  padding: 15px;
+}
+
+.transparent2 {
+  position: relative;
+  display: inline-block;
+}
+
+.grid_2-4 {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  row-gap: 30px;
+  column-gap: 5px;
+  margin: 10px;
+}
+
+.image3 {
+  max-width: 100%;
+  height: 100%;
+  display: inline block;
+}
+
 .carousel-container {
   display: flex;
   align-items: center;
@@ -45,9 +76,25 @@
 }
 
 .image-container img {
-  max-width: 100%; /* Billederne fylder hele bredden af containeren */
-  height: auto; /* Bevarer billedets proportioner */
   margin-bottom: none; /* Plads mellem billederne */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: grid;
+}
+
+.image-container_1 {
+  display: flex;
+  flex-direction: column; /* Standard til mobil, viser billederne under hinanden */
+  width: 100%; /* Giver fuld bredde til containeren */
+}
+
+.image-container_1 img {
+  margin-bottom: none; /* Plads mellem billederne */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: grid;
 }
 
 .kunde {
@@ -63,6 +110,12 @@
     padding-left: 300px;
     padding-right: 300px;
   }
+
+  .grid_1-2 {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+
   .image-container {
     flex-direction: row; /* Ændrer til rækkefølge ved desktop */
     justify-content: maximum; /* Placerer billederne med plads imellem */
@@ -71,8 +124,24 @@
   .image-container img {
     max-width: auto; /* Giver plads til to billeder ved siden af hinanden */
     margin-bottom: 20px; /* Fjerner margin mellem billederne */
-    margin-top: 20px;
+    height: 70%;
+    grid-column: 1;
+    grid-row: 1;
   }
+
+  .image-container_1 {
+    flex-direction: row; /* Ændrer til rækkefølge ved desktop */
+    justify-content: maximum; /* Placerer billederne med plads imellem */
+  }
+
+  .image-container_1 img {
+    max-width: auto; /* Giver plads til to billeder ved siden af hinanden */
+    margin-bottom: 20px; /* Fjerner margin mellem billederne */
+    height: 70%;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
   .kunde {
     padding-left: 400px;
     padding-right: 400px;
