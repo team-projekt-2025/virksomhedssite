@@ -13,13 +13,59 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/forside.css" />
+    <link rel="stylesheet" href="css/menu.css" />
   </head>
   <body>
+    <header>
+      <div>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Shop alt</a></li>
+            <li><a href="sengetoj.html">Sengetøj og lagner</a></li>
+            <li><a href="index.html">Dyner og puder</a></li>
+            <li><a href="index.html">Håndklæder</a></li>
+            <li><a href="index.html">Bambustøj</a></li>
+            <li><a href="index.html">Tilbehør</a></li>
+            <li><a href="index.html">Udsalg</a></li>
+            <li><a href="om_os.html">Om os</a></li>
+          </ul>
+          <button class="burger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+        </nav>
+
+        <div class="logo">
+          <a href="index.html">
+            <img src="logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <div class="logo_1">
+          <a href="login.html"
+            ><img src="pics/login_logo.webp" alt="person"
+          /></a>
+          <a href=""><img src="pics/sogning_logo.webp" alt="loop" /></a>
+          <a href="kurv.html"><img src="pics/kurv_logo.webp" alt="kurv" /></a>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="grid_1-2">
         <div class="image-container">
-          <img src="img_emilie/gronbambus.webp" alt="gronbambus" />
-          <img src="img_emilie/grabambus.webp" alt="grabambus" />
+          <img
+            src="img_emilie/img_forside/forside_sengetoj.webp"
+            alt="gronbambus"
+            class="transparent2"
+          />
+        </div>
+        <div class="image-container_1">
+          <img
+            src="img_emilie/img_forside/forside_bambo.webp"
+            alt="grabambus"
+            class="transparent2"
+          />
         </div>
       </section>
       <div class="bambus1">
@@ -30,33 +76,43 @@
           hvor egenskaber og komfort går hånd-i-hånd.
         </p>
       </div>
-      <div class="overskrift_carousel">
-        <h2>Bæredygtige bestsellers</h2>
+      <div class="bambus2">
+        <h3>Bæredygtige bestsellers</h3>
       </div>
-      <div class="carousel-container">
-        <div class="arrow" id="prev">&#8592;</div>
-        <div class="carousel">
-          <div class="carousel-item">
-            <img src="img_wonder/handklader.webp" alt="1" />
-            <p>Bambushåndklæde</p>
-          </div>
-          <div class="carousel-item">
-            <img src="img_wonder/stol.webp" alt="2" />
-            <p>Bambus hovedpudebetræk</p>
-          </div>
-          <div class="carousel-item">
-            <img src="img_wonder/tojstativ.webp" alt="3" />
-            <p>Bambus sengebetræk</p>
-          </div>
-          <div class="carousel-item">
-            <img src="img_celine/img/hovedpude.webp" alt="4" />
-            <p>Bambus rullemadras</p>
-          </div>
-          <div class="carousel-item">
-            <img src="img_celine/img/Bambusdyne (1).webp" alt="5" />
-            <p>Bambus rullemadras</p>
-          </div>
+      <div class="grid_2-4">
+        <div>
+          <img
+            src="img_emilie/img_forside/forside2.webp"
+            alt="forside2"
+            class="image3"
+          />
+          <p>Håndklæde</p>
         </div>
+        <div>
+          <img
+            src="img_emilie/img_forside/forside3.webp"
+            alt="forside3"
+            class="image3"
+          />
+          <p>Til børn</p>
+        </div>
+        <div>
+          <img
+            src="img_emilie/img_forside/forside1.webp"
+            alt="forside1"
+            class="image3"
+          />
+          <p>om os</p>
+        </div>
+        <div>
+          <img
+            src="img_emilie/img_forside/forside4.webp"
+            alt="forside4"
+            class="image3"
+          />
+          <p>...</p>
+        </div>
+
         <div class="arrow" id="next">&#8594;</div>
       </div>
 
@@ -127,5 +183,6 @@
     </footer>
     <script src="js/footer.js"></script>
     <script src="js/forside.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
