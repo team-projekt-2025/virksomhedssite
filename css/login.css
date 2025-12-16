@@ -47,7 +47,7 @@ body {
   text-align: left;
 }
 
-p {
+.p_login {
   padding: 20px;
 }
 
@@ -95,6 +95,16 @@ p {
   margin-bottom: 20px;
 }
 
+label,
+b {
+  font-size: 18px;
+  color: #49433c;
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
 /* Mobile version slut */
 
 /* Desktop version start */
