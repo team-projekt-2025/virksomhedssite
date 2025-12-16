@@ -86,11 +86,11 @@ p {
 }
 
 /* start - Sat ind for at lave popup*/
-.desktop-only {
-  .desktop-only {
+.desktop-only1 {
+  .desktop-only1 {
     display: none;
   }
-  .mobile-only {
+  .mobile-only1 {
     display: block;
   }
   /* slut - Sat ind for at lave popup*/
@@ -107,10 +107,10 @@ p {
   }
 
   /* start - Sat ind for at lave popup*/
-  .desktop-only {
+  .desktop-only1 {
     display: block;
   }
-  .mobile-only {
+  .mobile-only1 {
     display: none;
   }
   /* slut - Sat ind for at lave popup*/
@@ -121,7 +121,7 @@ p {
   .bund_grid_3-2 {
     grid-template-columns: 3fr 1fr;
   }
-  .desktop-only {
+  .desktop-only1 {
     display: inline-block;
   }
   #popup {
