@@ -58,6 +58,7 @@ a {
   font-weight: weight;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  text-decoration: none;
 }
 
 a:hover {
