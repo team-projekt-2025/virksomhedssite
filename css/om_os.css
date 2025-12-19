@@ -1,0 +1,47 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column; /* Standard til mobil, viser billederne under hinanden */
+  width: 100%; /* Giver fuld bredde til containeren */
+}
+
+.image-container img {
+  max-width: 100%; /* Billederne fylder hele bredden af containeren */
+  height: auto; /* Bevarer billedets proportioner */
+  margin-bottom: none; /* Plads mellem billederne */
+}
+.ide {
+  background-color: rgba(211, 211, 202, 0.804);
+  padding: 10px;
+}
+
+@media (min-width: 1300px) {
+  .image-container {
+    flex-direction: row; /* Ændrer til rækkefølge ved desktop */
+    justify-content: maximum; /* Placerer billederne med plads imellem */
+  }
+
+  .image-container img {
+    max-width: auto; /* Giver plads til to billeder ved siden af hinanden */
+    margin-bottom: 20px; /* Fjerner margin mellem billederne */
+    margin-top: 20px;
+  }
+
+  .grid_1-2ide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 60px;
+  }
+  p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
